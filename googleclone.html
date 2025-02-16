@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+           width: 100vw;
+           height: 100vh;
+          background-image: url(bac.jpg);
+          background-size: cover;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .center {
+            width: 50%;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .inp-grp {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 25px;
+            width: 80%;
+            padding: 5px 15px;
+            position: relative;
+            
+            
+        }
+        .text-field {
+            font-size: 18px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            width: 500px;
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+           gap: 5px;
+        }
+        i {
+           color: black;
+           font-size: 18px;
+           margin:  0 5px;
+           
+           
+        }
+        .fav-card{
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .fav-card:hover{
+            background-color: rgba(255, 255, 255, 0.118);
+            .dots{
+                opacity: 1;
+            }
+        }
+        .circle{
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.138);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .insta{
+            width: 100%;
+           border-radius: 50%;
+        }
+        .fav-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .fav-card p{
+            color: white;
+        }
+        .dots{
+            font-size: 20px;
+            position: relative;
+            left: 50px;
+            color: white;
+            opacity: 0;
+            transition: 0.4s all ease;
+        }
+        .top-right{
+            width: 200px;
+            height: 50px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+        }
+        .grid{
+    width: 0px;
+    color: white;
+   
+            }
+                .dotts{
+                    display: flex;
+                    color: white; 
+                         }
+
+      .loop{
+        width: 30px;
+        border-radius: 50%;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="google.png" alt="" width="272px" style="margin-bottom: 30px;">
+            <div class="inp-grp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://google.com/search">
+                <input type="text" class="text-field" width="600%"  placeholder="Search Google or type a URL" name="q"> 
+            </form>
+            <div class="icons">
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            </div>
+          <div class="fav-list">
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                 <img src="te.png" class="insta" alt="">
+                </div>
+                 <p>Telegram</p>
+             </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                 <img src="chat.png" class="insta" alt="">
+                </div>
+                 <p>Chatgpt</p>
+             </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                 <img src="cop.jpeg" class="insta" alt="">
+                </div>
+                 <p>Copilot</p>
+             </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                 <img src="c.png" class="insta" alt="">
+                </div>
+                 <p>Canva</p>
+             </div>
+            <div class="fav-card">
+                <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                <div class="circle">
+                 <img src="p.png" class="insta" alt="">
+                </div>
+                 <p>Add ons</p>
+             </div>
+            
+          </div>
+          </div>
+
+        </div>
+    </div>
+
+
+    <div class="top-right">
+        <p>Gmail</p>
+        <p>Images</p>
+       <div class="dotts">
+        <i class="fa-solid fa-ellipsis-vertical grid"></i> 
+        <i class="fa-solid fa-ellipsis-vertical grid"></i> 
+        <i class="fa-solid fa-ellipsis-vertical grid"></i> 
+       </div> 
+       <img src="giphy.gif" alt="" class="loop">
+        </div>
+       
+</body>
+</html>
